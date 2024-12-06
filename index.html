@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <!-- Font Awesom -->
@@ -32,27 +32,34 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <div>
-        <img src="images/logo.png" alt="logo" />
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#">로그인</a></li>
-          <li><a href="#">탐색</a></li>
-          <li><a href="#">비즈니스</a></li>
-          <li><a href="#">지원</a></li>
-        </ul>
-      </nav>
-      <div>
-        <form>
-          <fieldset>
-            <input type="search" />
-            <button>
-              <i class="fa fa-search header__search__icon"></i>
-            </button>
-          </fieldset>
-        </form>
+    <header class="header">
+      <div class="header__container max-container">
+        <img class="header__logo" src="images/logo.png" alt="logo" />
+        <nav>
+          <ul class="header__menu">
+            <li class="header__menu__item"><a href="#">로그인</a></li>
+            <li class="header__menu__item"><a href="#">탐색</a></li>
+            <li class="header__menu__item"><a href="#">비즈니스</a></li>
+            <li class="header__menu__item"><a href="#">지원</a></li>
+          </ul>
+        </nav>
+        <div class="header__side">
+          <form class="header__search__container">
+            <fieldset class="header__search">
+              <input
+                class="header__search__input"
+                type="search"
+                placeholder="검색..."
+              />
+              <button class="header__search__button" type="submit">
+                <i class="fa fa-search header__icon"></i>
+              </button>
+            </fieldset>
+          </form>
+          <a class="header__icon" href="#">
+            <i class="fa-regular fa-user"> </i>
+          </a>
+        </div>
       </div>
     </header>
     <main>
