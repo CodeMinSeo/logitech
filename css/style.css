@@ -403,3 +403,163 @@ input::placeholder {
 .about__btn {
   font-weight: bold;
 }
+
+/* Footer */
+#contact {
+  background-color: var(--color-footer-bg);
+  color: var(--color-primary-variant);
+  padding: 100px 0 20px;
+  font-size: 14px;
+}
+
+#contact a,
+i {
+  color: var(--color-primary-variant);
+}
+
+.footer__imports__section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 14px;
+}
+
+.footer__imports {
+  margin: 0 20px 0 0;
+  padding: 0 100px 30px 0;
+}
+
+/* 빈공간 :hover 하면 하위 요소에 적용 */
+.footer__import :hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.footer__article__title {
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.footer__import {
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.footer__contact__section {
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__sns {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 30px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.footer__sns__icon:hover {
+  filter: brightness(1.2);
+}
+
+.footer__search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.footer__search__input {
+  width: 100%;
+  height: 45px;
+  padding: 10px 20px;
+  background: transparent;
+  font-size: 1.2rem;
+  background: var(--color-primary);
+  color: #2f3132;
+  border: 0;
+  outline: 0;
+}
+input::placeholder {
+  color: #2f3132;
+  font-size: 1rem;
+}
+
+.footer__search__button {
+  background: var(--color-yellow);
+  width: 45px;
+  height: 45px;
+  border: 0 none;
+  cursor: pointer;
+}
+
+.footer__icon {
+  color: var(--color-text);
+}
+
+.footer__search__button:hover {
+  filter: brightness(0.85);
+}
+
+.footer__checkbox {
+  margin: 10px 0;
+  padding: 0;
+  border: none;
+}
+
+.footer__checkbox__input {
+  margin: 0;
+  transform: scale(1.2);
+}
+
+.footer__checkbox__label {
+  float: right;
+  padding-left: 10px;
+}
+
+.footer--underline {
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer__copyright__section {
+  display: flex;
+  padding: 30px 0 20px;
+}
+
+.footer__copyright__links {
+  display: flex;
+}
+
+.footer__copyright__link {
+  padding: 0 12px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.footer__copyright__link:last-child {
+  border-right: none;
+}
+
+.footer__copyright__kor {
+  margin-left: auto;
+  cursor: pointer;
+}
+.footer__copyright__kor:hover {
+  filter: brightness(1.2);
+}
+.footer--underline--hover:hover {
+  filter: brightness(1.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+.footer__address__section {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px 0;
+  font-size: 13px;
+}

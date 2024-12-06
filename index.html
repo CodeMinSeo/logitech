@@ -265,71 +265,93 @@
     </main>
     <!-- Footer -->
     <footer id="contact">
-      <div class="footer_section">
-        <div>
-          <h3>정보</h3>
-          <ul>
-            <li><a href="#">로지텍 스토리</a></li>
-            <li><a href="#">채용</a></li>
-            <li><a href="#">투자자</a></li>
-            <li><a href="#">블로그</a></li>
-            <li><a href="#">프레스</a></li>
-            <li><a href="#">연락처</a></li>
+      <div class="footer__container max-container">
+        <div class="footer__imports__section">
+          <div class="footer__article">
+            <h3 class="footer__article__title">정보</h3>
+            <ul class="footer__imports">
+              <li class="footer__import"><a href="#">로지텍 스토리</a></li>
+              <li class="footer__import"><a href="#">채용</a></li>
+              <li class="footer__import"><a href="#">투자자</a></li>
+              <li class="footer__import"><a href="#">블로그</a></li>
+              <li class="footer__import"><a href="#">프레스</a></li>
+              <li class="footer__import"><a href="#">연락처</a></li>
+            </ul>
+          </div>
+          <div class="footer__article">
+            <h3 class="footer__article__title">가치</h3>
+            <ul class="footer__imports">
+              <li class="footer__import"><a href="#">사회 공헌</a></li>
+              <li class="footer__import"><a href="#">지속 가능성</a></li>
+              <li class="footer__import"><a href="#">재활용</a></li>
+            </ul>
+          </div>
+          <div class="footer__article">
+            <h3 class="footer__article__title">고객</h3>
+            <ul class="footer__imports">
+              <li class="footer__import"><a href="#">이메일 설정</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__contact__section">
+          <div class="footer__sns">
+            <i class="footer__sns__icon fa-brands fa-facebook"></i>
+            <i class="footer__sns__icon fa-brands fa-twitter"></i>
+            <i class="footer__sns__icon fa-brands fa-instagram"></i>
+          </div>
+          <form class="footer__search__container">
+            <fieldset class="footer__search">
+              <input
+                class="footer__search__input"
+                type="search"
+                placeholder="이메일 주소 입력"
+              />
+              <button class="footer__search__button">
+                <i class="footer__icon fa-solid fa-caret-right"></i>
+              </button>
+            </fieldset>
+            <fieldset class="footer__checkbox">
+              <input class="footer__checkbox__input" type="checkbox" />
+              <label
+                class="footer__checkbox__label"
+                for="footer__checkbox__label"
+                >로지텍의 개인화된 마케팅을 받고 싶습니다. 언제든지 구독을<br />
+                취소할 수 있습니다. Logitech
+                <span class="footer--underline"
+                  >개인정보 보호정책을확인해보 <br />
+                  세요.</span
+                >
+              </label>
+            </fieldset>
+          </form>
+        </div>
+        <div class="footer__copyright__section">
+          <div class="footer__copyright__ctn">
+            <p>©2024 로지텍. All rights reserved</p>
+          </div>
+          <ul class="footer__copyright__links">
+            <li class="footer__copyright__link"><a href="#">이용 약관</a></li>
+            <li class="footer__copyright__link">
+              <a href="#">개인정보 보호정책</a>
+            </li>
+            <li class="footer__copyright__link"><a href="#">쿠키 설정</a></li>
+            <li class="footer__copyright__link"><a href="#">사이트맵</a></li>
           </ul>
+          <div class="footer__copyright__kor">
+            <i class="fa-solid fa-earth-americas"></i
+            ><span class="footer--underline--hover"> 대한민국</span>
+          </div>
         </div>
-        <div>
-          <h3>가치</h3>
-          <ul>
-            <li><a href="#">사회 공헌</a></li>
-            <li><a href="#">지속 가능성</a></li>
-            <li><a href="#">재활용</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>고객</h3>
-          <ul>
-            <li><a href="#">이메일 설정</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer_section">
-        <div>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
-        </div>
-        <form>
-          <fieldset>
-            <input type="search" />
-            <button><i class="fa-solid fa-caret-right"></i></button>
-          </fieldset>
-          <fieldset>
-            <input type="checkbox" />
-            <label for=""
-              >로지텍의 개인화된 마케팅을 받고 싶습니다. 언제든지 구독을 취소할
-              수 있습니다. Logitech개인정보 보호정책을 확인해보세요.</label
-            >
-          </fieldset>
-        </form>
-      </div>
-      <div class="footer_section">
-        <div>
-          <p>©2024 로지텍. All rights reserved</p>
-        </div>
-        <ul>
-          <li><a href="#">이용 약관</a></li>
-          <li><a href="#">개인정보 보호정책</a></li>
-          <li><a href="#">쿠키 설정</a></li>
-          <li><a href="#">사이트맵</a></li>
-        </ul>
-        <div><i class="fa-solid fa-earth-americas"></i>대한민국</div>
-      </div>
-      <div class="footer_section">
-        <div>
-          <a href="#">고객 지원 센터 (제품 및 A/S 문의처)</a> /
-          <a href="#">전화 지원</a> (수신자부담) ㅣ 사업자 등록번호:
-          107-86-10308 ㅣ로지텍 코리아 대표이사 : PAO, YA-CHINGㅣ서울특별시
-          영등포구 여의공원로 101, CCMM 빌딩 402B
+        <div class="footer__address__section">
+          <a href="#"
+            ><span class="footer--underline"
+              >고객 지원 센터 (제품 및 A/S 문의처)</span
+            ></a
+          >
+          /
+          <a href="#"><span class="footer--underline">전화 지원</span></a>
+          (수신자부담) ㅣ 사업자 등록번호: 107-86-10308 ㅣ로지텍 코리아 대표이사
+          : PAO, YA-CHINGㅣ서울특별시 영등포구 여의공원로 101, CCMM 빌딩 402B
         </div>
       </div>
     </footer>
