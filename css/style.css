@@ -264,6 +264,21 @@ input::placeholder {
   object-fit: cover;
 }
 
+.serie__window {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* img에 absolute 로 크기가 같은 2겹의 창을 만들어서 스타일링 */
 .serie__metadata {
   position: absolute;
   top: 0;
@@ -282,7 +297,10 @@ input::placeholder {
 
 .serie__metadata:hover {
   opacity: 0.8;
-  transform: translateY(0);
+}
+
+.serie:hover .serie__window > .des {
+  display: none;
 }
 
 .serie__metadata__title {
