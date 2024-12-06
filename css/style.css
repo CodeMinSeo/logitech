@@ -53,10 +53,6 @@ button {
   border: 0;
 }
 
-button:focus {
-  outline: 1px solid var(--color-accent);
-}
-
 /* Common */
 .max-container {
   max-width: var(--size-max-width);
@@ -65,7 +61,8 @@ button:focus {
 
 /* Header */
 .header {
-  background-color: var(--color-text);
+  background-color: transparent;
+  position: absolute;
   width: 100%;
   height: 90px;
   line-height: 90px;
@@ -126,7 +123,8 @@ button:focus {
 
 input::placeholder {
   color: var(--color-primary);
-  font-size: 0.9;
+  padding-left: 0.5rem;
+  font-size: 1rem;
 }
 
 .header__search__button {
@@ -142,4 +140,47 @@ input::placeholder {
 .header__search__icon:hover {
   transform: scale(1.1);
   color: 000;
+}
+
+/* Home */
+#home {
+  background: url(/images/home/home.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  padding-top: 90px;
+  color: var(--color-primary);
+}
+
+.home__title {
+  margin: 2rem 0;
+  font-size: 3.5rem;
+  font-weight: 550;
+  line-height: 4rem;
+}
+
+.home__title--strong {
+  color: var(--color-accent);
+}
+
+.home__des {
+  margin-bottom: 2rem;
+  font-size: 18px;
+  font-weight: 250;
+}
+
+.home__btn {
+  display: inline-block;
+  background-color: var(--color-primary);
+  margin: 0 1px 12px 12px;
+  padding: 18px 36px;
+  font-size: 14px;
+  color: var(--color-black);
+  transition: all 300ms ease-in-out;
+}
+
+.home__btn:hover {
+  background-color: transparent;
+  color: var(--color-primary);
+  outline: 1px solid var(--color-primary);
 }
