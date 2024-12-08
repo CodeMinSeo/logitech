@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minseo's Logitech</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesom -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="header">
+      <div class="header__container max-container">
+        <img class="header__logo" src="images/logo.png" alt="logo" />
+        <nav>
+          <ul class="header__menu">
+            <li class="header__menu__item"><a href="#">로그인</a></li>
+            <li class="header__menu__item"><a href="#">탐색</a></li>
+            <li class="header__menu__item"><a href="#">비즈니스</a></li>
+            <li class="header__menu__item"><a href="#">지원</a></li>
+          </ul>
+        </nav>
+        <div class="header__side">
+          <form class="header__search__container">
+            <fieldset class="header__search">
+              <input
+                class="header__search__input"
+                type="search"
+                placeholder="검색..."
+              />
+              <button class="header__search__button" type="submit">
+                <i class="fa fa-search header__icon"></i>
+              </button>
+            </fieldset>
+          </form>
+          <a class="header__icon" href="#">
+            <i class="fa-regular fa-user"> </i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="login" class="section">
+        <h2 class="title">회원가입</h2>
+
+        <div class="container max-container">
+          <div class="form-container" id="signup">
+            <form class="sub__form">
+              <label class="sub__label" for="signup-email">이메일:</label>
+              <input
+                class="sub__input"
+                type="email"
+                id="signup-email"
+                name="signup-email"
+                required
+              />
+
+              <label class="sub__label" for="signup-username"
+                >사용자 이름:</label
+              >
+              <input
+                class="sub__input"
+                type="text"
+                id="signup-username"
+                name="signup-username"
+                required
+              />
+
+              <label class="sub__label" for="signup-password">비밀번호:</label>
+              <input
+                class="sub__input"
+                type="password"
+                id="signup-password"
+                name="signup-password"
+                required
+              />
+
+              <button class="sub__button" type="submit">회원가입</button>
+            </form>
+            <p class="sub__p">
+              이미 계정이 있으신가요? <a class="sub__a" href="#login">로그인</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="footer__container max-container">
+        <div class="footer__imports__section">
+          <div class="footer__article">
+            <h3 class="footer__article__title">정보</h3>
+            <ul class="footer__imports">
+              <li class="footer__import"><a href="#">로지텍 스토리</a></li>
+              <li class="footer__import"><a href="#">채용</a></li>
+              <li class="footer__import"><a href="#">투자자</a></li>
+              <li class="footer__import"><a href="#">블로그</a></li>
+              <li class="footer__import"><a href="#">프레스</a></li>
+              <li class="footer__import"><a href="#">연락처</a></li>
+            </ul>
+          </div>
+          <div class="footer__article">
+            <h3 class="footer__article__title">가치</h3>
+            <ul class="footer__imports">
+              <li class="footer__import"><a href="#">사회 공헌</a></li>
+              <li class="footer__import"><a href="#">지속 가능성</a></li>
+              <li class="footer__import"><a href="#">재활용</a></li>
+            </ul>
+          </div>
+          <div class="footer__article">
+            <h3 class="footer__article__title">고객</h3>
+            <ul class="footer__imports">
+              <li class="footer__import"><a href="#">이메일 설정</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__contact__section">
+          <div class="footer__sns">
+            <i class="footer__sns__icon fa-brands fa-facebook"></i>
+            <i class="footer__sns__icon fa-brands fa-twitter"></i>
+            <i class="footer__sns__icon fa-brands fa-instagram"></i>
+          </div>
+          <form class="footer__search__container">
+            <fieldset class="footer__search">
+              <input
+                class="footer__search__input"
+                type="search"
+                placeholder="이메일 주소 입력"
+              />
+              <button class="footer__search__button">
+                <i class="footer__icon fa-solid fa-caret-right"></i>
+              </button>
+            </fieldset>
+            <fieldset class="footer__checkbox">
+              <input class="footer__checkbox__input" type="checkbox" />
+              <label
+                class="footer__checkbox__label"
+                for="footer__checkbox__label"
+                >로지텍의 개인화된 마케팅을 받고 싶습니다. 언제든지 구독을<br />
+                취소할 수 있습니다. Logitech
+                <span class="footer--underline"
+                  >개인정보 보호정책을확인해보 <br />
+                  세요.</span
+                >
+              </label>
+            </fieldset>
+          </form>
+        </div>
+        <div class="footer__copyright__section">
+          <div class="footer__copyright__ctn">
+            <p>©2024 로지텍. All rights reserved</p>
+          </div>
+          <ul class="footer__copyright__links">
+            <li class="footer__copyright__link"><a href="#">이용 약관</a></li>
+            <li class="footer__copyright__link">
+              <a href="#">개인정보 보호정책</a>
+            </li>
+            <li class="footer__copyright__link"><a href="#">쿠키 설정</a></li>
+            <li class="footer__copyright__link"><a href="#">사이트맵</a></li>
+          </ul>
+          <div class="footer__copyright__kor">
+            <i class="fa-solid fa-earth-americas"></i
+            ><span class="footer--underline--hover"> 대한민국</span>
+          </div>
+        </div>
+        <div class="footer__address__section">
+          <a href="#"
+            ><span class="footer--underline"
+              >고객 지원 센터 (제품 및 A/S 문의처)</span
+            ></a
+          >
+          /
+          <a href="#"><span class="footer--underline">전화 지원</span></a>
+          (수신자부담) ㅣ 사업자 등록번호: 107-86-10308 ㅣ로지텍 코리아 대표이사
+          : PAO, YA-CHINGㅣ서울특별시 영등포구 여의공원로 101, CCMM 빌딩 402B
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

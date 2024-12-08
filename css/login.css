@@ -1,0 +1,98 @@
+:root {
+  /* App Colors */
+  --color-primary: var(--color-white);
+  --color-primary-variant: var(--color-white-variant);
+  --color-accent: var(--color-blue);
+  --color-accent-variant: var(--color-yellow);
+  --color-text: var(--color-black);
+  --color-footer-bg: var(--color-gray);
+
+  /* Colors */
+  --color-white: #ffffff;
+  --color-white-variant: #c3c6c8;
+  --color-black: #000000;
+  --color-blue: #00b9f6;
+  --color-yellow: #dcdf00;
+  --color-gray: #252a2c;
+
+  /* Size */
+  --size-max-width: 1200px;
+}
+
+/* Login.css */
+#header {
+  position: static;
+  background-color: var(--color-text);
+}
+
+/* styles.css */
+
+.container {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-container {
+  width: 100%;
+}
+
+.sub__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub__label {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.sub__input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.sub__button {
+  padding: 10px;
+  background-color: var(--color-text);
+  color: var(--color-primary);
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sub__button:hover {
+  background-color: var(--color-accent);
+}
+
+.sub__p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.sub__a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.sub__a:hover {
+  text-decoration: underline;
+}
