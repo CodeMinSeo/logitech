@@ -99,6 +99,16 @@ button {
   color: var(--color-primary);
 }
 
+.header__logo__a {
+  height: 90px;
+  line-height: 90px;
+}
+
+.header__logo {
+  /* img 세로중앙 정렬 */
+  vertical-align: middle;
+}
+
 .header a,
 .header i {
   color: var(--color-primary);
@@ -145,14 +155,15 @@ button {
   width: 950%;
   color: var(--color-primary);
   background: transparent;
-  font-size: 1.2rem;
+  margin-left: 5px;
+  font-size: 1rem;
   border: 0;
   outline: 0;
 }
 
-input::placeholder {
+.header__side ::placeholder {
   color: var(--color-primary);
-  padding-left: 0.5rem;
+  margin-left: 5px;
   font-size: 1rem;
 }
 
@@ -378,7 +389,7 @@ input::placeholder {
 
 /* About */
 #about {
-  background: url(/images/about/about_1.jfif);
+  background: url(/images/about/about_1.jpg);
   background-size: cover;
   background-position: center center;
   width: 100%;
